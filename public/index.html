@@ -5,20 +5,14 @@
   <link rel="stylesheet" href="main.css">
   <script src="bundle.js" async></script>
 </head>
-<body>
-  <div data-controller="clipboard">
-    PIN: <input data-target="clipboard.source" type="text" value="1234" readonly>
-    <button class="clipboard-button" data-action="clipboard#copy">Copy to Clipboard</button>
-  </div>
-
-  <div data-controller="clipboard">
-    PIN: <input data-target="clipboard.source" type="text" value="3737" readonly>
-    <button data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</button>
-  </div>
-
-  <div data-controller="clipboard">
-    PIN: <textarea data-target="clipboard.source" readonly>3737</textarea>
-    <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
-  </div>
-</body>
+  <body>
+    <div data-controller="slideshow" data-slideshow-index="1">
+      <button data-action="slideshow#previous">←</button>
+      <button data-action="slideshow#next">→</button>
+      <div data-target="slideshow.slide" class="slide">🐵</div>
+      <div data-target="slideshow.slide" class="slide">🙈</div>
+      <div data-target="slideshow.slide" class="slide">🙉</div>
+      <div data-target="slideshow.slide" class="slide">🙊</div>
+    </div>
+  </body>
 </html>
