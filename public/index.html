@@ -6,6 +6,16 @@
   <script src="bundle.js" async></script>
 </head>
   <body>
+    <div id="container">
+      <div data-controller="api">
+
+        <input data-target="api.search" data-action="keyup->api#apiCall" type="text" id="search">
+        <ul id="results">
+          <li>Resultat 1 (TODO: remove)</li>
+          <li>Resultat 2 (TODO: remove)</li>
+        </ul>
+      </div>
+    </div>
    <!--  <div data-controller="slideshow" data-slideshow-index="1">
       <button data-action="slideshow#previous">←</button>
       <button data-action="slideshow#next">→</button>
@@ -15,7 +25,8 @@
       <div data-target="slideshow.slide" class="slide">🙊</div>
     </div> -->
 
-    <div data-controller="content-loader"
-     data-content-loader-url="/messages.html"></div>
+  <!--     <div data-controller="content-loader"
+     data-content-loader-url="/messages.html"></div> -->
+
   </body>
 </html>
